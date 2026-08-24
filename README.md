@@ -1,4 +1,4 @@
-# 👋 Hello, I'm Nebras Adnan Damsarkho
+# 👋 Hello, I'm Nebras Damsarkho
 
 **Mechatronics Engineer | Industrial Automation Specialist | Digital Twin Developer**
 
