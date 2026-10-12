@@ -1,49 +1,70 @@
 # 👋 Hello, I'm Nebras Damsarkho
+
 **Mechatronics Engineer | Industrial Automation Specialist | Digital Twin Developer**
 
-📍 Damascus, Syria  
-✉️ nebras4u@gmail.com  
+📍 Damascus, Syria
+✉️ nebras4u@gmail.com
 📱 +963 947 204 385 / +963 981 722 635
 
 ---
 
 ## 🎯 About Me
 
-I'm a **Strategic Mechatronics Engineer** with over **7 years of experience** in industrial automation, high-power electrical systems, and maintenance management. I specialize in bridging the gap between physical industrial systems and their digital counterparts, with a focus on **PLC-driven robotic simulation** and **Sim-to-Real validation**.
+**Mechatronics engineer** with over **7 years of experience** in industrial automation, high-power electrical systems, and maintenance management. I build **digital twins of industrial robots** that bridge the gap between Siemens PLCs and NVIDIA Isaac Sim — with a focus on **PLC-driven simulation** and **Sim-to-Real validation**.
+
+Currently maintaining **[isaac-plc-digital-twin-v2](https://github.com/Nebras4u/isaac-plc-digital-twin-v2)** — a vendor-neutral platform for PLC ↔ ROS 2 ↔ Isaac Sim integration, verified at **0.025° tracking accuracy**.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 1. Isaac Digital Twin: S7-1500T ↔ ROS2 ↔ Isaac Sim
-> **NVIDIA Isaac Sim Digital Twin** — Real-time synchronization between Siemens S7-1500T, ROS2, and NVIDIA Isaac Sim for industrial robotic arms
+### 1. Isaac Digital Twin — Vendor-Neutral Platform
 
-[![Isaac Digital Twin](https://img.shields.io/badge/Isaac_Digital_Twin-v0.1-blue.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin)
+> **Siemens S7-1500 ↔ ROS 2 ↔ NVIDIA Isaac Sim 5.1**
+> A vendor-neutral digital twin for KUKA KR210 L150 L — switch PLC transport by editing one YAML line.
 
-**Technologies:** Python · Siemens S7-1500T · OPC UA · ROS2 Humble · NVIDIA Isaac Sim 5.0 · KUKA KR210
+[![Release](https://img.shields.io/badge/release-v3.0.0-blue.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin-v2/releases/tag/v3.0.0)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%2B%20Windows-lightgrey.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin-v2)
+[![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-blue.svg)](https://docs.ros.org/en/jazzy/)
+[![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-5.1.0-green.svg)](https://developer.nvidia.com/isaac-sim)
 
-**Key Features:**
-- ✅ Real-time bidirectional joint state synchronization (PLC ↔ Isaac Sim)
-- ✅ KUKA `$MAMES` frame conversion (mathematical ↔ mechanical zero)
-- ✅ Isaac Home offset calibration for URDF bias correction
-- ✅ Per-axis deviation monitoring between PLC and simulation
-- 🔜 IK node with What-If feasibility checks (v0.2)
-- 🔜 Pneumatic suction gripper + glass sheet handling (v0.3)
+**Highlights:**
+- **Vendor-neutral transport** — `tcp_json` · `opcua` · `plc_api` behind a single `PlcDriver` interface
+- **Ruckig online trajectory generation** — jerk-limited, time-optimal
+- **Counter-based heartbeat protocol** — immune to clock drift, verified at 0.065 ppm
+- **Verification results** — 0.025° max tracking error, 11.5 ms mean control-loop latency, 100% LBP(≤ 15 ms)
+- **Troubleshooting log** — 39 documented issues with root cause and fix
+
+**Tech:** Python · Siemens S7-1500 (PLCSIM Advanced v6.0) · OPC UA · TCP/JSON · ROS 2 Jazzy · NVIDIA Isaac Sim 5.1 · Ruckig · KUKA KR210
+
+**Status:** Stable · [v3.0.0 released 2026-10-12](https://github.com/Nebras4u/isaac-plc-digital-twin-v2/releases/tag/v3.0.0)
 
 ---
 
-### 2. GlassSync: Industrial Digital Twin Platform
-> **Siemens S7-1500 + CoppeliaSim** — Digital twin platform for robotic glass handling
+### 2. GlassSync — Industrial Digital Twin Platform
+
+> **Siemens S7-1500 + CoppeliaSim** — Digital twin platform for robotic glass handling.
 
 [![GlassSync](https://img.shields.io/badge/GlassSync-Digital_Twin-blue.svg)](https://github.com/Nebras4u/GlassSync)
 
-**Technologies:** Python · Siemens S7-1500 · OPC UA · CoppeliaSim · ZMQ · TimescaleDB · Tkinter
+**Highlights:**
+- Real-time PLC data mirroring to 3D simulation
+- MOVEIT Manual Control & What-If Simulation modes
+- OPC UA communication with timestamp-free writing
+- CoppeliaSim IK for accurate robot motion
 
-**Key Features:**
-- ✅ Real-time PLC data mirroring to 3D simulation
-- ✅ MOVEIT Manual Control & What-If Simulation modes
-- ✅ OPC UA communication with timestamp-free writing
-- ✅ CoppeliaSim IK for accurate robot motion
+**Tech:** Python · Siemens S7-1500 · OPC UA · CoppeliaSim · ZMQ · TimescaleDB · Tkinter
+
+---
+
+## 📺 Digital Twin Video Series
+
+A YouTube series documenting real integration work — setup, debugging, and verification of the full control stack.
+
+[![YouTube Playlist](https://img.shields.io/badge/YouTube-Digital_Twin_Series-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLMadf0IBbtAE)
+
+- **Episode #1** — Offline PLC/Sim Comparison (S7-1500T + ROS 2 + Isaac Sim)
+- **Episode #2** — Live PLC/ROS 2/Isaac comparison *(planned)*
 
 ---
 
@@ -52,10 +73,10 @@ I'm a **Strategic Mechatronics Engineer** with over **7 years of experience** in
 | Category | Technologies |
 |----------|--------------|
 | **PLC & Automation** | Siemens S7-300/400/1200/1500, PCS7, TIA Portal, WinCC, DCS |
-| **Robotics** | KUKA KRC2, ROS2, NVIDIA Isaac Sim, CoppeliaSim, URDF, Kinematics |
-| **Digital Twin** | Python, OPC UA, Real-Time Simulation, Sim-to-Real |
+| **Robotics** | KUKA KRC2, ROS 2 (Jazzy), NVIDIA Isaac Sim 5.1, CoppeliaSim, URDF, Kinematics |
+| **Digital Twin** | Python, OPC UA, TCP/JSON, Real-Time Simulation, Sim-to-Real |
 | **IIoT** | Node.js, MQTT, TimescaleDB, Predictive Maintenance |
-| **Communication** | Profibus, Profinet, Modbus, OPC UA, ZMQ |
+| **Industrial Protocols** | Profibus, Profinet, Modbus, OPC UA |
 | **VFDs** | ABB, Siemens, LS, Delta |
 
 ---
@@ -71,4 +92,4 @@ I'm a **Strategic Mechatronics Engineer** with over **7 years of experience** in
 
 ## 📌 Keywords
 
-`Industrial Automation` `Siemens PLC` `S7-1500T` `TIA Portal` `PCS7` `SCADA` `DCS` `VFD` `KUKA Robotics` `ROS2` `NVIDIA Isaac Sim` `Digital Twin` `OPC UA` `Sim-to-Real` `IIoT` `Predictive Maintenance` `Industry 4.0` `Python` `Node.js` `MQTT` `TimescaleDB` `URDF` `GlassSync`
+`Industrial Automation` `Siemens PLC` `S7-1500` `TIA Portal` `PCS7` `SCADA` `DCS` `VFD` `KUKA Robotics` `KR210` `ROS 2` `Jazzy` `NVIDIA Isaac Sim` `Digital Twin` `OPC UA` `Sim-to-Real` `Ruckig` `IIoT` `Predictive Maintenance` `Industry 4.0` `Python` `Node.js` `MQTT` `TimescaleDB` `URDF` `GlassSync`
