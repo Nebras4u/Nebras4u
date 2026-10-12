@@ -12,7 +12,7 @@
 
 **Mechatronics engineer** with over **7 years of experience** in industrial automation, high-power electrical systems, and maintenance management. I build **digital twins of industrial robots** that bridge the gap between Siemens PLCs and NVIDIA Isaac Sim — with a focus on **PLC-driven simulation** and **Sim-to-Real validation**.
 
-Currently maintaining **[isaac-plc-digital-twin-v2](https://github.com/Nebras4u/isaac-plc-digital-twin-v2)** — a vendor-neutral platform for PLC ↔ ROS 2 ↔ Isaac Sim integration, verified at **0.025° tracking accuracy**.
+Currently maintaining **[isaac-plc-digital-twin](https://github.com/Nebras4u/isaac-plc-digital-twin)** — a vendor-neutral platform for PLC ↔ ROS 2 ↔ Isaac Sim integration, verified at **0.025° tracking accuracy**.
 
 ---
 
@@ -24,7 +24,7 @@ Currently maintaining **[isaac-plc-digital-twin-v2](https://github.com/Nebras4u/
 > A vendor-neutral digital twin for KUKA KR210 L150 L — switch PLC transport by editing one YAML line.
 
 [![Release](https://img.shields.io/badge/release-v3.0.0-blue.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin-v2/releases/tag/v3.0.0)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%2B%20Windows-lightgrey.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin-v2)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%2B%20Windows-lightgrey.svg)](https://github.com/Nebras4u/isaac-plc-digital-twin)
 [![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-blue.svg)](https://docs.ros.org/en/jazzy/)
 [![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-5.1.0-green.svg)](https://developer.nvidia.com/isaac-sim)
 
